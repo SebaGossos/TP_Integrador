@@ -20,5 +20,7 @@ if __name__ == "__main__":
     x = int(input("Ingrese primer número: "))
     y = int(input("Ingrese segundo número: "))
     suma_dec, suma_bits = sumar_n_bits(x, y, bits=4)
+    
     print(f"Suma en decimal: {suma_dec}")
+    # Indica que la representación binaria del resultado se muestra desde el bit menos significativo (LSB) al más significativo (MSB).
     print(f"Suma en binario (LSB→MSB): {suma_bits}")

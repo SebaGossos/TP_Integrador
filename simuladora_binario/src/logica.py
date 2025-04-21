@@ -27,7 +27,7 @@ def not_gate(a):
 def medio_sumador(a, b):
     suma = xor_gate(a, b)
     acarreo = and_gate(a, b)
-    return [suma, acarreo]  # lista de dos elementos
+    return [suma, acarreo]  
 
 def sumador_completo(a, b, c_in):
     s1, c1 = medio_sumador(a, b)
