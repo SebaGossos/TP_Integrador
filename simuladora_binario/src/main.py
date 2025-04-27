@@ -2,20 +2,6 @@
 from binario import decimal_a_binario, binario_a_decimal
 from logica import sumador_completo
 
-def sumar_n_bits(a_dec, b_dec, bits=4):
-    a_bits = decimal_a_binario(a_dec, bits)
-    b_bits = decimal_a_binario(b_dec, bits)
-    resultado = []
-    c_in = 0
-    # iterar cada posición
-    for i in range(bits):
-        suma_bit, c_in = sumador_completo(a_bits[i], b_bits[i], c_in)
-        resultado.append(suma_bit)
-    # añadir acarreo final
-    resultado.append(c_in)
-    # convertir a decimal para mostrar
-    return binario_a_decimal(resultado), resultado
-
 def generar_tabla_verdad(funcion, n_entradas):
     tabla = {}
     for i in range(2 ** n_entradas):
@@ -55,6 +41,22 @@ def generar_tabla_verdad_operaciones():
     print("\nTabla de Verdad:")
     for entradas, salida in tabla.items():
         print(f"{entradas} -> {salida}")
+
+
+def sumar_n_bits(a_dec, b_dec, bits=4):
+    a_bits = decimal_a_binario(a_dec, bits)
+    b_bits = decimal_a_binario(b_dec, bits)
+    resultado = []
+    c_in = 0
+    # iterar cada posición
+    for i in range(bits):
+        suma_bit, c_in = sumador_completo(a_bits[i], b_bits[i], c_in)
+        print(suma_bit, c_in)
+        resultado.append(suma_bit)
+    # añadir acarreo final
+    resultado.append(c_in)
+    # convertir a decimal para mostrar
+    return binario_a_decimal(resultado), resultado
 
 if __name__ == "__main__":
     print("Bienvenido al generador de tablas de verdad.")

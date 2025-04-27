@@ -35,3 +35,5 @@ def sumador_completo(a, b, c_in):
     # el acarreo de salida es OR de los dos acarreo parciales
     c_out = or_gate(c1, c2)
     return [s2, c_out]
+
+print(__name__)

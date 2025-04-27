@@ -2,6 +2,7 @@ def decimal_a_binario(n, bits):
     # devuelve lista de bits de longitud 'bits'
     resultado = []
     for i in range(bits):
+        print(n % 2)
         resultado.append(n % 2)
         n = n // 2
     # la lista está al revés (LSB primero)
