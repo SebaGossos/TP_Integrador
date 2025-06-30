@@ -94,7 +94,7 @@ def generar_tabla_verdad(funcion, n_entradas):
   [Google Docs](https://docs.google.com/document/d/1Iin5peslKSUow_U5qhhqIu6ZrIlZw7AVf-Vki0m72UA/edit?usp=sharing)
 
 * 📺 Video explicativo (grupo):
-  [YouTube](https://youtu.be/)
+  [YouTube](https://youtu.be/jAtkEcPUYUU/)
 
 ---
 
